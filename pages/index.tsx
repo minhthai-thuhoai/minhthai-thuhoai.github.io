@@ -116,12 +116,17 @@ const Home: NextPage<{ images: ImageProps[] }> = ({ images }) => {
           </p>
         </div>
         <div className="after:content relative w-full mb-5 flex flex-col items-center justify-end gap-4 overflow-hidden rounded-lg bg-white/10 px-6 pb-8 pt-40 text-center text-white shadow-highlight after:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:shadow-highlight lg:pt-6">
-          <iframe width="1120" height="630" src="https://www.youtube.com/embed/uZaxA0sIUPk?si=NTOTxBLiRCURi-gK&amp;controls=0"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen></iframe>
+          <div className="relative w-full overflow-hidden rounded-lg pt-[56.25%]">
+            <iframe
+              src="https://www.youtube.com/embed/uZaxA0sIUPk?si=NTOTxBLiRCURi-gK&amp;controls=0"
+              title="YouTube video player"
+              className="absolute inset-0 h-full w-full"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </div>
         </div>
         {images.length === 0 && (
           <div className="my-16 text-center text-white/70">No images found in /public/images.</div>
@@ -172,17 +177,6 @@ const Home: NextPage<{ images: ImageProps[] }> = ({ images }) => {
         >
           github.com/minhthai-thuhoai/minhthai-thuhoai.github.io
         </a>
-        <div className="flex items-center justify-center gap-2">
-          <a
-            href="https://www.linkedin.com/company/openhuman"
-            target="_blank"
-            className="font-semibold hover:text-white"
-            rel="noreferrer"
-          >
-            OpenHuman ©
-          </a>
-          {' '}for the AI photo.
-        </div>
       </footer>
     </>
   );
