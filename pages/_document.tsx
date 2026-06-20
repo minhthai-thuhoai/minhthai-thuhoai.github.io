@@ -6,22 +6,16 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link rel="icon" href="/favicon.ico" />
-          <meta
-            name="description"
-            content="Chủ tịch Hồ Chí Minh - Tấm gương rạng ngời dân tộc, sự kết hợp giữa khôn khéo chiến lược và đạo đức bền vững qua nhiều thập kỷ thử thách là minh chứng cho tài năng mọi thời đại."
-          />
-          <meta property="og:site_name" content="nextjsconf-pics.vercel.app" />
-          <meta
-            property="og:description"
-            content="Chủ tịch Hồ Chí Minh - Tấm gương rạng ngời dân tộc, sự kết hợp giữa khôn khéo chiến lược và đạo đức bền vững qua nhiều thập kỷ thử thách là minh chứng cho tài năng mọi thời đại."
-          />
-          <meta property="og:title" content="Chủ tịch Hồ Chí Minh - Tấm gương rạng ngời dân tộc, sự kết hợp giữa khôn khéo chiến lược và đạo đức bền vững qua nhiều thập kỷ thử thách là minh chứng cho tài năng mọi thời đại." />
+          <meta name="description"
+            content="Đám cưới Minh Thái & Thu Hoài - 14.06.2026. Website lưu giữ những khoảnh khắc đẹp trong ngày cưới, câu chuyện tình yêu, album ảnh, video cưới và lời chúc phúc từ gia đình, bạn bè." />
+          <meta property="og:site_name" content="Minh Thái & Thu Hoài Wedding" />
+          <meta property="og:description"
+            content="Đám cưới Minh Thái & Thu Hoài - 14.06.2026. Nơi lưu giữ câu chuyện tình yêu, khoảnh khắc ngày cưới, album ảnh, video cưới và những lời chúc phúc ý nghĩa." />
+          <meta property="og:title" content="Đám cưới Minh Thái & Thu Hoài - 14.06.2026" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Chủ tịch Hồ Chí Minh - Tấm gương rạng ngời dân tộc, sự kết hợp giữa khôn khéo chiến lược và đạo đức bền vững qua nhiều thập kỷ thử thách là minh chứng cho tài năng mọi thời đại." />
-          <meta
-            name="twitter:description"
-            content="Chủ tịch Hồ Chí Minh - Tấm gương rạng ngời dân tộc, sự kết hợp giữa khôn khéo chiến lược và đạo đức bền vững qua nhiều thập kỷ thử thách là minh chứng cho tài năng mọi thời đại."
-          />
+          <meta name="twitter:title" content="Đám cưới Minh Thái & Thu Hoài - 14.06.2026" />
+          <meta name="twitter:description"
+            content="Website lưu giữ những khoảnh khắc hạnh phúc trong ngày cưới của Minh Thái & Thu Hoài, cùng album ảnh, video cưới và lời chúc phúc từ gia đình, bạn bè." />
         </Head>
         <body className="bg-black antialiased" suppressHydrationWarning>
           <script
