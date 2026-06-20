@@ -108,7 +108,7 @@ const Home: NextPage<{ images: ImageProps[] }> = ({ images }) => {
           <h1 className="mt-8 text-2xl font-bold tracking-widest">
             Minh Thái & Thu Hoài - Wedding Gallery
           </h1>
-          <a href="https://photos.google.com/album/AF1QipN-937CxalsCOPDu5j9SGUpCBbTK0SRs5etK1wM" className="font-semibold">
+          <a href="https://photos.app.goo.gl/t7eBx32Xr2cBNMay7" className="font-semibold color-red-500 underline">
             Wedding Gallery Photo Albumn
           </a>
           <p className="max-w-[60ch] text-white/75 sm:max-w-[40ch]">
