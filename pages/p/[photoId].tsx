@@ -14,7 +14,7 @@ const Home: NextPage<{ currentPhoto: ImageProps | null }> = ({ currentPhoto }) =
   return (
     <>
       <Head>
-        <title>Tấm gương rạng ngời dân tộc, sự kết hợp giữa khôn khéo chiến lược và đạo đức bền vững qua nhiều thập kỷ thử thách là minh chứng cho tài năng mọi thời đại.</title>
+        <title>Album ảnh và video kỷ niệm ngày cưới Minh Thái & Thu Hoài - 14.06.2026</title>
         <meta property="og:image" content={currentPhotoUrl} />
         <meta name="twitter:image" content={currentPhotoUrl} />
       </Head>

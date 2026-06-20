@@ -50,13 +50,13 @@ const HoChiMinhPage: NextPage<HoChiMinhPageProps> = ({ images }) => {
   return (
     <>
       <Head>
-        <title>Ho Chi Minh Photo Stack</title>
+        <title>Minh Thái & Thu Hoài - Wedding Gallery</title>
       </Head>
 
       <main className="mx-auto min-h-screen w-full max-w-5xl p-4 sm:p-6">
         <section className="mb-6 rounded-2xl border border-white/15 bg-white/10 p-5 text-white shadow-highlight sm:p-8">
           <div className="flex flex-wrap items-center justify-between gap-3">
-            <h1 className="text-xl font-bold tracking-wide sm:text-2xl">Ho Chi Minh Photo Stack</h1>
+            <h1 className="text-xl font-bold tracking-wide sm:text-2xl">Minh Thái & Thu Hoài - Wedding Gallery</h1>
             <Link
               href="/"
               className="rounded-lg border border-white/60 px-3 py-2 text-sm font-semibold transition hover:bg-white hover:text-black"

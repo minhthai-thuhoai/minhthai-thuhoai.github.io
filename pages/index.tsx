@@ -82,7 +82,7 @@ const Home: NextPage<{ images: ImageProps[] }> = ({ images }) => {
   return (
     <>
       <Head>
-        <title>Tấm gương rạng ngời dân tộc, sự kết hợp giữa khôn khéo chiến lược và đạo đức bền vững qua nhiều thập kỷ thử thách là minh chứng cho tài năng mọi thời đại.</title>
+        <title>Album ảnh và video kỷ niệm ngày cưới Minh Thái & Thu Hoài - 14.06.2026</title>
         <meta
           property="og:image"
           content="https://minhthai-thuhoai.github.io/og-image.png"
@@ -102,25 +102,27 @@ const Home: NextPage<{ images: ImageProps[] }> = ({ images }) => {
           />
         )}
         <div className="after:content relative w-full mb-5 flex flex-col items-center justify-end gap-4 overflow-hidden rounded-lg bg-white/10 px-6 pb-8 pt-40 text-center text-white shadow-highlight after:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:shadow-highlight lg:pt-6">
-            <div className="flex w-64 max-w-[40ch] items-center justify-center">
-              <Logo />
-            </div>
-            <h1 className="mt-8 text-2xl font-bold tracking-widest">
-              Chủ tịch Hồ Chí Minh
-            </h1>
-            <h3 className="font-semibold">
-              AI Enhance Photo Gallery
-            </h3>
-            {/* <Link
-              href="/compare"
-              className="z-10 mt-2 rounded-lg border border-white/70 px-3 py-2 text-sm font-semibold transition hover:bg-white hover:text-black"
-            >
-              Compare Black & White vs Colorized
-            </Link> */}
-            <p className="max-w-[60ch] text-white/75 sm:max-w-[40ch]">
-              Tấm gương rạng ngời dân tộc, sự kết hợp giữa khôn khéo chiến lược và đạo đức bền vững qua nhiều thập kỷ thử thách là minh chứng cho tài năng mọi thời đại.
-            </p>
+          <div className="flex w-full max-w-[40ch] items-center justify-center">
+            <Logo />
           </div>
+          <h1 className="mt-8 text-2xl font-bold tracking-widest">
+            Minh Thái & Thu Hoài - Wedding Gallery
+          </h1>
+          {/* <h3 className="font-semibold">
+            Wedding Gallery Album ảnh và video kỷ niệm ngày cưới Minh Thái & Thu Hoài - 14.06.2026
+          </h3> */}
+          <p className="max-w-[60ch] text-white/75 sm:max-w-[40ch]">
+            Đám cưới Minh Thái & Thu Hoài - 14.06.2026. Nơi lưu giữ câu chuyện tình yêu, khoảnh khắc ngày cưới, album ảnh, video cưới và những lời chúc phúc ý nghĩa.
+          </p>
+        </div>
+        <div className="after:content relative w-full mb-5 flex flex-col items-center justify-end gap-4 overflow-hidden rounded-lg bg-white/10 px-6 pb-8 pt-40 text-center text-white shadow-highlight after:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:shadow-highlight lg:pt-6">
+          <iframe width="1422.22" height="800" src="https://www.youtube.com/embed/uZaxA0sIUPk?si=NTOTxBLiRCURi-gK&amp;controls=0"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen></iframe>
+        </div>
         {images.length === 0 && (
           <div className="my-16 text-center text-white/70">No images found in /public/images.</div>
         )}

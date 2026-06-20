@@ -25,14 +25,14 @@ export default function SharedModal({
     const shareUrl = `https://minhthai-thuhoai.pages.dev/p/${index}`;
     const tweetHref =
         "https://twitter.com/intent/tweet?text=" +
-        encodeURIComponent("Check out this pic from Ho Chi Minh AI Enhance Photo Gallery!") +
+        encodeURIComponent("Check out this pic from Ho Chi Minh Minh Thái & Thu Hoài - Wedding Gallery!") +
         "%0A%0A" +
         encodeURIComponent(shareUrl);
     const facebookHref =
         "https://www.facebook.com/sharer/sharer.php?u=" +
         encodeURIComponent(shareUrl) +
         "&quote=" +
-        encodeURIComponent("Check out this pic from Ho Chi Minh AI Enhance Photo Gallery!");
+        encodeURIComponent("Check out this pic from Ho Chi Minh Minh Thái & Thu Hoài - Wedding Gallery!");
 
     return (
         <MotionConfig
