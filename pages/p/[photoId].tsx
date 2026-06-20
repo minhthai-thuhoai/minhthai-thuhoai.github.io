@@ -9,7 +9,7 @@ const Home: NextPage<{ currentPhoto: ImageProps | null }> = ({ currentPhoto }) =
 
   const currentPhotoUrl = currentPhoto
     ? currentPhoto.src
-    : "https://minhthai-thuhoai.pages.dev/og-image.png";
+    : "https://minhthai-thuhoai.pages.dev/og-image.jpg";
 
   return (
     <>

@@ -85,11 +85,11 @@ const Home: NextPage<{ images: ImageProps[] }> = ({ images }) => {
         <title>Album ảnh và video kỷ niệm ngày cưới Minh Thái & Thu Hoài - 14.06.2026</title>
         <meta
           property="og:image"
-          content="https://minhthai-thuhoai.github.io/og-image.png"
+          content="https://minhthai-thuhoai.github.io/og-image.jpg"
         />
         <meta
           name="twitter:image"
-          content="https://minhthai-thuhoai.github.io/og-image.png"
+          content="https://minhthai-thuhoai.github.io/og-image.jpg"
         />
       </Head>
       <main className="mx-auto max-w-490 p-4">
@@ -108,15 +108,15 @@ const Home: NextPage<{ images: ImageProps[] }> = ({ images }) => {
           <h1 className="mt-8 text-2xl font-bold tracking-widest">
             Minh Thái & Thu Hoài - Wedding Gallery
           </h1>
-          {/* <h3 className="font-semibold">
-            Wedding Gallery Album ảnh và video kỷ niệm ngày cưới Minh Thái & Thu Hoài - 14.06.2026
-          </h3> */}
+          <a href="https://photos.google.com/album/AF1QipN-937CxalsCOPDu5j9SGUpCBbTK0SRs5etK1wM" className="font-semibold">
+            Wedding Gallery Photo Albumn
+          </a>
           <p className="max-w-[60ch] text-white/75 sm:max-w-[40ch]">
             Đám cưới Minh Thái & Thu Hoài - 14.06.2026. Nơi lưu giữ câu chuyện tình yêu, khoảnh khắc ngày cưới, album ảnh, video cưới và những lời chúc phúc ý nghĩa.
           </p>
         </div>
         <div className="after:content relative w-full mb-5 flex flex-col items-center justify-end gap-4 overflow-hidden rounded-lg bg-white/10 px-6 pb-8 pt-40 text-center text-white shadow-highlight after:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:shadow-highlight lg:pt-6">
-          <iframe width="1422.22" height="800" src="https://www.youtube.com/embed/uZaxA0sIUPk?si=NTOTxBLiRCURi-gK&amp;controls=0"
+          <iframe width="1120" height="630" src="https://www.youtube.com/embed/uZaxA0sIUPk?si=NTOTxBLiRCURi-gK&amp;controls=0"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
