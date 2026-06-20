@@ -87,7 +87,6 @@ const HoChiMinhPage: NextPage<HoChiMinhPageProps> = ({ images }) => {
                     width={image.width}
                     height={image.height}
                     priority={index === 0}
-                    loading="lazy"
                     sizes="(max-width: 768px) 100vw, (max-width: 1280px) 90vw, 1100px"
                     className="h-auto w-full object-contain"
                   />
