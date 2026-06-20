@@ -7,7 +7,7 @@ const sitemapPath = path.join(publicDir, "sitemap.xml");
 const mediaSitemapPath = path.join(publicDir, "sitemap-media.xml");
 const sitemapIndexPath = path.join(publicDir, "sitemap-index.xml");
 const robotsPath = path.join(publicDir, "robots.txt");
-const siteUrl = (process.env.SITE_URL || "https://hochiminh-ai.pages.dev").replace(/\/$/, "");
+const siteUrl = (process.env.SITE_URL || "https://minhthai-thuhoai.github.io").replace(/\/$/, "");
 
 const photoLabelStart = 100;
 
@@ -174,10 +174,9 @@ async function main() {
   const generatedAt = new Date().toISOString();
   const staticPages = [
     { path: "/", changefreq: "weekly", priority: 1.0 },
-    { path: "/hochiminh/", changefreq: "weekly", priority: 0.9 },
-    { path: "/compare/", changefreq: "monthly", priority: 0.6 },
+    { path: "/minhthai-thuhoai/", changefreq: "weekly", priority: 0.9 },
   ];
-  const galleryPath = "/hochiminh/";
+  const galleryPath = "/minhthai-thuhoai/";
 
   const pageEntries = [];
   const mediaEntries = [];

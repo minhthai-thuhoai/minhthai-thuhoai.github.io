@@ -22,7 +22,7 @@ export default function SharedModal({
 
     const currentImageWidth = Number(currentImage.width) > 0 ? Number(currentImage.width) : 1920;
     const currentImageHeight = Number(currentImage.height) > 0 ? Number(currentImage.height) : 1280;
-    const shareUrl = `https://hochiminh-ai.pages.dev/p/${index}`;
+    const shareUrl = `https://minhthai-thuhoai.pages.dev/p/${index}`;
     const tweetHref =
         "https://twitter.com/intent/tweet?text=" +
         encodeURIComponent("Check out this pic from Ho Chi Minh AI Enhance Photo Gallery!") +

@@ -28,10 +28,28 @@ const Home: NextPage<{ images: ImageProps[] }> = ({ images }) => {
   useEffect(() => {
     // This effect keeps track of the last viewed photo in the modal to keep the index page in sync when the user navigates back
     if (lastViewedPhoto && !photoId) {
+      const lastViewedPhotoIndex = images.findIndex(
+        (image) => image.id === Number(lastViewedPhoto),
+      );
+
+      if (lastViewedPhotoIndex === -1) {
+        setLastViewedPhoto(null);
+        return;
+      }
+
+      if (lastViewedPhotoIndex >= visibleCount) {
+        setVisibleCount((previous) => Math.max(previous, lastViewedPhotoIndex + 1));
+        return;
+      }
+
+      if (!lastViewedPhotoRef.current) {
+        return;
+      }
+
       lastViewedPhotoRef.current.scrollIntoView({ block: "center" });
       setLastViewedPhoto(null);
     }
-  }, [photoId, lastViewedPhoto, setLastViewedPhoto]);
+  }, [photoId, lastViewedPhoto, visibleCount, images, setLastViewedPhoto]);
 
   useEffect(() => {
     if (visibleCount >= images.length) {
@@ -67,11 +85,11 @@ const Home: NextPage<{ images: ImageProps[] }> = ({ images }) => {
         <title>Tấm gương rạng ngời dân tộc, sự kết hợp giữa khôn khéo chiến lược và đạo đức bền vững qua nhiều thập kỷ thử thách là minh chứng cho tài năng mọi thời đại.</title>
         <meta
           property="og:image"
-          content="https://hochiminh-ai.vercel.app/og-image.png"
+          content="https://minhthai-thuhoai.github.io/og-image.png"
         />
         <meta
           name="twitter:image"
-          content="https://hochiminh-ai.vercel.app/og-image.png"
+          content="https://minhthai-thuhoai.github.io/og-image.png"
         />
       </Head>
       <main className="mx-auto max-w-490 p-4">
@@ -102,19 +120,6 @@ const Home: NextPage<{ images: ImageProps[] }> = ({ images }) => {
             <p className="max-w-[60ch] text-white/75 sm:max-w-[40ch]">
               Tấm gương rạng ngời dân tộc, sự kết hợp giữa khôn khéo chiến lược và đạo đức bền vững qua nhiều thập kỷ thử thách là minh chứng cho tài năng mọi thời đại.
             </p>
-            <Link
-              href="/hochiminh"
-              className="z-10 mt-2 rounded-lg border border-white/70 px-3 py-2 text-sm font-semibold transition hover:bg-white hover:text-black"
-            >
-              View Stacked Photos
-            </Link>
-            {/* <a
-              className="pointer z-10 mt-6 rounded-lg border border-white bg-white px-3 py-2 text-sm font-semibold text-black transition hover:bg-white/10 hover:text-white md:mt-4"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Clone and Deploy
-            </a> */}
           </div>
         {images.length === 0 && (
           <div className="my-16 text-center text-white/70">No images found in /public/images.</div>
@@ -158,12 +163,12 @@ const Home: NextPage<{ images: ImageProps[] }> = ({ images }) => {
       <footer className="p-6 text-center text-white/80 sm:p-12">
         Source code{" "}
         <a
-          href="https://github.com/hochiminh-ai/hochiminh-ai.github.io"
+          href="https://github.com/minhthai-thuhoai/minhthai-thuhoai.github.io"
           target="_blank"
           className="underline"
           rel="noreferrer"
         >
-          github.com/hochiminh-ai/hochiminh-ai.github.io
+          github.com/minhthai-thuhoai/minhthai-thuhoai.github.io
         </a>
         <div className="flex items-center justify-center gap-2">
           <a
